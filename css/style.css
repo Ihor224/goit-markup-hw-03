@@ -400,7 +400,7 @@ button:focus {
 
 /* Стили для Портфолио */
 
-h1 {
+.is-hidden {
   display: none;
 }
 
