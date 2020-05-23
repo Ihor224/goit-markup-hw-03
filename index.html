@@ -13,7 +13,7 @@
   <body>
     <header class="page-header">
       <div class="container main-header">
-        <nav class="container main-header">
+        <nav class="main-header">
           <a href="" class="logo"><span class="word-web">Web</span> Studio</a>
 
           <ul class="site-nav list">
@@ -43,11 +43,9 @@
           <h2 class="section-title is-hidden">Приемущества компании</h2>
           <ul class="feature-list list">
             <li class="item">
-              <img
-                class="active-logo"
-                src="./images/vector.svg"
-                alt="антенна"
-              />
+              <div class="active-logo">
+                <img src="./images/vector.svg" alt="антенна" />
+              </div>
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
@@ -93,7 +91,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section top">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
@@ -133,190 +131,212 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="item">
-              <a href=""
+              <a class="work-link" href=""
                 ><img
+                  class="card-image"
                   src="./images/photo1.jpg"
                   alt="John Smith"
                   width="278"
                   height="260"
               /></a>
-              <h3 class="title">John Smith</h3>
-              <p class="position">Product Designer</p>
-              <ul class="list">
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Instagram"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a href="" class="social-links" aria-label="Ссылка на Twitter"
-                    >Twitter</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Facebook"
-                    >Facebook</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Linkedin"
-                    >Linkedin</a
-                  >
-                </li>
-              </ul>
+
+              <div class="card-name">
+                <h3 class="title">John Smith</h3>
+                <p class="position">Product Designer</p>
+                <ul class="list">
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Instagram"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Twitter"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Facebook"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Linkedin"
+                      >Linkedin</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <li class="item">
               <a href=""
                 ><img
+                  class="card-image"
                   src="./images/photo2.jpg"
                   alt="Marta Stewart"
                   width="278"
                   height="260"
               /></a>
-              <h3 class="title">Marta Stewart</h3>
-              <p class="position">Frontend Developer</p>
-              <ul class="list">
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Instagram"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a href="" class="social-links" aria-label="Ссылка на Twitter"
-                    >Twitter</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Facebook"
-                    >Facebook</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Linkedin"
-                    >Linkedin</a
-                  >
-                </li>
-              </ul>
+              <div class="card-name">
+                <h3 class="title">Marta Stewart</h3>
+                <p class="position">Frontend Developer</p>
+                <ul class="list">
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Instagram"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Twitter"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Facebook"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Linkedin"
+                      >Linkedin</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <li class="item">
               <a href=""
                 ><img
+                  class="card-image"
                   src="./images/photo3.jpg"
                   alt="Robert Jakis"
                   width="278"
                   height="260"
               /></a>
-              <h3 class="title">Robert Jakis</h3>
-              <p class="position">Marketing</p>
-              <ul class="list">
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Instagram"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a href="" class="social-links" aria-label="Ссылка на Twitter"
-                    >Twitter</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Facebook"
-                    >Facebook</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Linkedin"
-                    >Linkedin</a
-                  >
-                </li>
-              </ul>
+              <div class="card-name">
+                <h3 class="title">Robert Jakis</h3>
+                <p class="position">Marketing</p>
+                <ul class="list">
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Instagram"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Twitter"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Facebook"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Linkedin"
+                      >Linkedin</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <li class="item">
               <a href=""
                 ><img
+                  class="card-image"
                   src="./images/photo4.jpg"
                   alt="Martin Doe"
                   width="278"
                   height="260"
               /></a>
-              <h3 class="title">Martin Doe</h3>
-              <p class="position">UI Designer</p>
-              <ul class="list">
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Instagram"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a href="" class="social-links" aria-label="Ссылка на Twitter"
-                    >Twitter</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Facebook"
-                    >Facebook</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="social-links"
-                    aria-label="Ссылка на Linkedin"
-                    >Linkedin</a
-                  >
-                </li>
-              </ul>
+              <div class="card-name">
+                <h3 class="title">Martin Doe</h3>
+                <p class="position">UI Designer</p>
+                <ul class="list">
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Instagram"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Twitter"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Facebook"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="social-links"
+                      aria-label="Ссылка на Linkedin"
+                      >Linkedin</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="section-clients">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
             <li class="item">
-              <a href=""
-                ><img
-                  class="clients-links"
-                  src="./images/logo1.svg"
-                  alt="YA & CO"
+              <a class="clients-links"
+                ><img href="" src="./images/logo1.svg" alt="YA & CO"
               /></a>
             </li>
             <li class="item">
@@ -366,7 +386,7 @@
 
     <footer class="page-footer">
       <div class="container main-footer">
-        <div class="block">
+        <div class="block-contact">
           <a href="" class="logo-footer"
             ><span class="word-web">Web</span> Studio</a
           >
@@ -383,7 +403,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="block-join">
           <p class="text">присоединяйтесь</p>
           <ul class="our-links list">
             <li>
@@ -414,7 +434,7 @@
           <a href="" class="button">Подписаться</a>
         </div>
       </div>
-      <p class="copyright">2020 | Developed by GoIT Students</p>
+      <p class="copyright container">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>

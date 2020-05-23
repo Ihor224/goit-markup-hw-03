@@ -18,6 +18,7 @@
 body {
   background-color: var(--prymery-background-color);
   color: var(--prymery-text-color);
+  margin: 0;
 
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -50,6 +51,8 @@ body {
 }
 
 .list {
+  margin: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -127,7 +130,6 @@ body {
 /* Hero */
 
 .hero {
-  margin-bottom: 89px;
   text-align: center;
 }
 
@@ -146,14 +148,18 @@ body {
 /* Button */
 
 button {
+  width: max-content;
+  height: 38px;
+  padding: 0 24px;
+  border-color: transparent;
+  border-radius: 4px;
+
   color: var(--secondary-text-color);
   background-color: #f5f4fa;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  min-width: 200px;
-  border-radius: 4px;
   text-align: center;
 }
 
@@ -184,6 +190,15 @@ button:focus {
 
 /* Section */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.top {
+  padding-top: 0;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -202,7 +217,7 @@ button:focus {
 /* Feature */
 
 .feature-list .item + .item {
-  margin-left: 29px;
+  margin-left: 30px;
 }
 
 .feature-list .item {
@@ -211,9 +226,6 @@ button:focus {
 
 .feature-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 94px;
-  padding-left: 0;
 }
 
 .feature-list .title {
@@ -226,9 +238,22 @@ button:focus {
 }
 
 .feature-list .text {
+  margin-top: 10px;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.active-logo {
+  display: block;
+  display: flex;
+  justify-content: center;
+  padding: 25px 104px;
+
+  border-radius: 4px;
+  background-color: #f5f4fa;
 }
 
 .active-logo:hover {
@@ -243,12 +268,13 @@ button:focus {
 
 .work-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 94px;
+
   text-align: center;
 }
 
 .work-list .title {
+  margin: 0;
+
   color: var(--white-text-color);
 
   text-transform: uppercase;
@@ -258,8 +284,6 @@ button:focus {
 }
 
 .section.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--secondary-backgound-color);
 }
 
@@ -267,18 +291,21 @@ button:focus {
 
 .team-list .item + .item {
   margin-left: 30px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
 }
 
 .team-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 94px;
   text-align: center;
 }
 
 .team-list .title {
   margin-top: 30px;
   margin-bottom: 10px;
+
   color: var(--secondary-text-color);
 
   font-weight: 500;
@@ -312,11 +339,6 @@ button:focus {
   margin-left: 30px;
 }
 
-.section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .clients-list {
   display: flex;
   margin-top: 0;
@@ -328,16 +350,20 @@ button:focus {
   background-color: var(--accent);
 }
 
+.clients-links {
+  display: block;
+}
+
 /* Footer */
 
 .main-footer {
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 48px;
+  padding-bottom: 28px;
 }
 
 .page-footer {
-  padding-top: 48px;
-  padding-bottom: 21px;
   background-color: var(--footer-background-color);
 }
 
@@ -378,6 +404,10 @@ button:focus {
   letter-spacing: 0.03em;
 }
 
+.block-contact {
+  margin-right: 179px;
+}
+
 .contacts .links {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -387,11 +417,18 @@ button:focus {
   margin-bottom: 0;
 }
 
+.block-join {
+  margin-right: 102px;
+}
+
 .copyright {
+  padding-top: 18px;
+  padding-bottom: 21px;
   margin-top: 0;
   margin-bottom: 0;
 
   color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 
   font-size: 12px;
   line-height: 2;
@@ -406,9 +443,17 @@ button:focus {
 
 .nav-item {
   display: flex;
+  justify-content: center;
   padding-left: 0;
-  margin-top: 93px;
   margin-bottom: 50px;
+}
+
+.nav-item .item {
+  margin-right: 8px;
+}
+
+.nav-item .item:last-child {
+  margin-right: 0;
 }
 
 .work-desc {
@@ -416,15 +461,28 @@ button:focus {
   flex-wrap: wrap;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 94px;
-  text-align: center;
 }
 
 .work-desc .item {
-  width: calc((100% - 60px) / 3);
+  width: 380px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.work-desc .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.work-desc .item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .work-link {
+  display: block;
   text-decoration: none;
 }
 
@@ -438,14 +496,18 @@ button:focus {
 }
 
 .list .name {
-  color: var(--prymery-text-color);
+  margin-top: 0;
+  margin-bottom: 4px;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .list .description {
+  margin: 0;
+
   color: var(--white-text-color);
 
   font-weight: 400;
@@ -454,8 +516,25 @@ button:focus {
 }
 
 .list .caption {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  margin: 0;
+  color: var(--prymery-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.card-name {
+  padding: 20px 24px;
+
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-image {
+  display: block;
 }
